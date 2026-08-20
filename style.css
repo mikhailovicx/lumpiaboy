@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f0e2;
+    color: #183c32;
+}
+
+
+/* NAVBAR */
+
+header {
+    background-color: #183c32;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d9822b;
+}
+
+
+/* UMUM */
+
+.section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p,
+.small-title {
+    color: #d9822b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #f7f0e2;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+.hero-text h1 span {
+    color: #d9822b;
+}
+
+.hero-text p {
+    line-height: 1.7;
+    color: #555;
+    max-width: 500px;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    background-color: #d9822b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #b9681c;
+}
+
+
+/* KEUNGGULAN */
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.advantage-card {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    width: 33.33%;
+    border-radius: 15px;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.advantage-card h3 {
+    margin-bottom: 10px;
+}
+
+.advantage-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* MENU */
+
+.menu-section {
+    background-color: #183c32;
+    color: white;
+}
+
+.menu-container {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-card {
+    background-color: white;
+    color: #183c32;
+    width: 33.33%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 25px;
+}
+
+.menu-info p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.price {
+    color: #d9822b;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.order-button {
+    display: block;
+    text-align: center;
+    background-color: #183c32;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+
+/* TENTANG */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* CARA PESAN */
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.step {
+    width: 25%;
+    text-align: center;
+}
+
+.step span {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d9822b;
+    margin-bottom: 15px;
+}
+
+.step p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    padding: 80px 8%;
+    background-color: #d9822b;
+    color: white;
+}
+
+.contact .small-title {
+    color: white;
+}
+
+.contact h2 {
+    font-size: 38px;
+}
+
+.contact p {
+    line-height: 1.6;
+}
+
+.contact .button {
+    background-color: #183c32;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #102b24;
+    color: white;
+    text-align: center;
+    padding: 40px 8%;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #ccc;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    .hero {
+        display: block;
+        padding-top: 50px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .advantages,
+    .menu-container,
+    .steps {
+        display: block;
+    }
+
+    .advantage-card,
+    .menu-card,
+    .step {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text {
+        margin-top: 35px;
+    }
+}
