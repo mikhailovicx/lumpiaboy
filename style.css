@@ -9,41 +9,77 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f7f0e2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcf9f2;
     color: #183c32;
 }
 
-
 /* NAVBAR */
-
 header {
     background-color: #183c32;
     color: white;
-    padding: 18px 8%;
+    padding: 15px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .logo h2 {
     margin: 0;
+    font-size: 22px;
+    letter-spacing: 0.5px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 20px;
     font-size: 14px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: #d9822b;
 }
 
+.nav-actions {
+    display: flex;
+    gap: 12px;
+}
 
-/* UMUM */
+.nav-btn {
+    background: #d9822b;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s;
+}
 
+.nav-btn:hover {
+    background-color: #b9681c;
+    transform: translateY(-2px);
+}
+
+.btn-login {
+    background: transparent;
+    border: 2px solid #d9822b;
+    color: #d9822b;
+}
+
+.btn-login:hover {
+    background: #d9822b;
+    color: white;
+}
+
+/* SECTION GLOBAL */
 .section {
     padding: 80px 8%;
 }
@@ -53,30 +89,28 @@ nav a:hover {
     margin-bottom: 45px;
 }
 
-.section-title p,
-.small-title {
+.section-title p, .small-title {
     color: #d9822b;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
+    margin-bottom: 5px;
 }
 
 .section-title h2 {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 32px;
 }
 
-
 /* HERO */
-
 .hero {
-    min-height: 600px;
-    padding: 70px 8%;
+    min-height: 80vh;
+    padding: 60px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    background-color: #f7f0e2;
+    background: linear-gradient(135deg, #f7f0e2 0%, #ebded0 100%);
 }
 
 .hero-text {
@@ -84,8 +118,8 @@ nav a:hover {
 }
 
 .hero-text h1 {
-    font-size: 55px;
-    line-height: 1.1;
+    font-size: 50px;
+    line-height: 1.15;
     margin: 15px 0;
 }
 
@@ -95,7 +129,7 @@ nav a:hover {
 
 .hero-text p {
     line-height: 1.7;
-    color: #555;
+    color: #4a5568;
     max-width: 500px;
 }
 
@@ -105,32 +139,38 @@ nav a:hover {
 
 .hero-image img {
     width: 100%;
-    height: 400px;
+    height: 380px;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-
 /* BUTTON */
-
 .button {
     display: inline-block;
     margin-top: 20px;
-    padding: 14px 25px;
+    padding: 12px 28px;
     background-color: #d9822b;
     color: white;
     text-decoration: none;
+    border: none;
     border-radius: 8px;
     font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .button:hover {
     background-color: #b9681c;
+    transform: translateY(-2px);
 }
 
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
 
-/* KEUNGGULAN */
-
+/* ADVANTAGES */
 .advantages {
     display: flex;
     justify-content: space-between;
@@ -139,14 +179,21 @@ nav a:hover {
 
 .advantage-card {
     background-color: white;
-    padding: 30px;
+    padding: 35px 25px;
     text-align: center;
     width: 33.33%;
     border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.advantage-card:hover {
+    transform: translateY(-8px);
 }
 
 .icon {
-    font-size: 40px;
+    font-size: 45px;
+    margin-bottom: 10px;
 }
 
 .advantage-card h3 {
@@ -156,11 +203,10 @@ nav a:hover {
 .advantage-card p {
     color: #666;
     line-height: 1.6;
+    font-size: 14px;
 }
 
-
 /* MENU */
-
 .menu-section {
     background-color: #183c32;
     color: white;
@@ -177,6 +223,15 @@ nav a:hover {
     width: 33.33%;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
 }
 
 .menu-card img {
@@ -187,33 +242,44 @@ nav a:hover {
 
 .menu-info {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .menu-info p {
     color: #666;
     line-height: 1.5;
+    font-size: 14px;
+    flex-grow: 1;
 }
 
 .price {
     color: #d9822b;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .order-button {
     display: block;
+    width: 100%;
     text-align: center;
     background-color: #183c32;
     color: white;
-    text-decoration: none;
+    border: none;
     padding: 12px;
-    border-radius: 7px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
+.order-button:hover {
+    background-color: #d9822b;
+}
 
 /* TENTANG */
-
 .about {
     display: flex;
     align-items: center;
@@ -226,9 +292,10 @@ nav a:hover {
 
 .about-image img {
     width: 100%;
-    height: 400px;
+    height: 380px;
     object-fit: cover;
     border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .about-text {
@@ -236,7 +303,7 @@ nav a:hover {
 }
 
 .about-text h2 {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 1.2;
 }
 
@@ -245,9 +312,7 @@ nav a:hover {
     line-height: 1.7;
 }
 
-
 /* CARA PESAN */
-
 .steps {
     display: flex;
     justify-content: space-between;
@@ -257,24 +322,27 @@ nav a:hover {
 .step {
     width: 25%;
     text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 
 .step span {
     display: inline-block;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     color: #d9822b;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .step p {
     color: #666;
     line-height: 1.5;
+    font-size: 14px;
 }
 
-
 /* CONTACT */
-
 .contact {
     text-align: center;
     padding: 80px 8%;
@@ -287,29 +355,23 @@ nav a:hover {
 }
 
 .contact h2 {
-    font-size: 38px;
-}
-
-.contact p {
-    line-height: 1.6;
+    font-size: 36px;
 }
 
 .contact .button {
     background-color: #183c32;
 }
 
+.contact .button:hover {
+    background-color: #0f2720;
+}
 
 /* FOOTER */
-
 footer {
     background-color: #102b24;
     color: white;
     text-align: center;
     padding: 40px 8%;
-}
-
-footer h2 {
-    margin-bottom: 10px;
 }
 
 footer p {
@@ -319,68 +381,142 @@ footer p {
 .copyright {
     margin-top: 25px;
     font-size: 13px;
+    opacity: 0.7;
 }
 
+/* MODAL OVERLAY */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-box {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.small-modal {
+    max-width: 380px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+/* CART ITEMS STYLING */
+.cart-items {
+    margin: 20px 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.cart-item-remove {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.checkout-form h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
 /* RESPONSIVE */
-
 @media screen and (max-width: 768px) {
-
     header {
-        display: block;
+        flex-direction: column;
+        gap: 15px;
         text-align: center;
     }
 
-    nav {
-        margin-top: 15px;
-    }
-
     nav a {
-        margin: 0 7px;
-        font-size: 12px;
+        margin: 0 8px;
     }
 
     .hero {
-        display: block;
-        padding-top: 50px;
+        flex-direction: column;
+        text-align: center;
     }
 
-    .hero-text,
-    .hero-image {
+    .hero-text, .hero-image, .about-image, .about-text {
         width: 100%;
     }
 
-    .hero-image {
-        margin-top: 40px;
+    .hero-text p {
+        margin: 0 auto;
     }
 
-    .hero-text h1 {
-        font-size: 40px;
+    .advantages, .menu-container, .steps, .about {
+        flex-direction: column;
     }
 
-    .advantages,
-    .menu-container,
-    .steps {
-        display: block;
-    }
-
-    .advantage-card,
-    .menu-card,
-    .step {
+    .advantage-card, .menu-card, .step {
         width: 100%;
-        margin-bottom: 25px;
-    }
-
-    .about {
-        display: block;
-    }
-
-    .about-image,
-    .about-text {
-        width: 100%;
-    }
-
-    .about-text {
-        margin-top: 35px;
     }
 }
