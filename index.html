@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Azaz Amam - Lumpia Hangat & Nikmat</title>
-
+    <title>Lumpia Basah & Goreng - Hangat & Nikmat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,339 +12,161 @@
 
     <!-- NAVBAR -->
     <header>
-
         <div class="logo">
-            <span>AZAZ</span> AMAM
+            <h2>Lumpia Basah & Goreng Azaz Amam</h2>
         </div>
 
         <nav>
             <a href="#home">Home</a>
             <a href="#keunggulan">Keunggulan</a>
-            <a href="#menu">Menu</a>
+            <a href="#menu">Menu</a>    
             <a href="#tentang">Tentang</a>
             <a href="#kontak">Kontak</a>
         </nav>
-
-        <div class="nav-right">
-
-            <!-- LOGIN -->
-            <button class="login-button" onclick="openLogin()">
-                👤 <span id="loginText">Login</span>
-            </button>
-
-            <!-- CART -->
-            <button class="cart-button" onclick="openCart()">
-                🛒
-                <span id="cartCount">0</span>
-            </button>
-
-        </div>
-
     </header>
 
 
-    <!-- HERO -->
+    <!-- HOME -->
     <main>
 
         <section id="home" class="hero">
-
             <div class="hero-text">
+                <p class="small-title">MAKANAN KHAS YANG LEZAT</p>
 
-                <p class="small-title">
-                    LUMPIA KHAS AZAZ AMAM
-                </p>
-
-                <h1>
-                    Rasa Lokal,
-                    <span>Bikin Nagih.</span>
+                <h1>Lumpia Basah & Goreng,<br>
+                    <span>Hangat & Nikmat</span>
                 </h1>
 
-                <p class="hero-description">
-                    Lumpia fresh dengan perpaduan isian,
-                    telur, dan bumbu khas yang cocok
-                    dinikmati kapan saja.
+                <p>
+                    Perpaduan isian segar, telur, dan bumbu khas
+                    dalam satu sajian yang gurih, nikmat,
+                    dan cocok dinikmati kapan saja.
                 </p>
 
-                <div class="hero-buttons">
-
-                    <a href="#menu" class="button">
-                        Lihat Menu →
-                    </a>
-
-                    <a href="#tentang" class="button-outline">
-                        Tentang Kami
-                    </a>
-
-                </div>
-
-                <div class="hero-tags">
-                    <span>✓ Fresh Made</span>
-                    <span>✓ Harga Bersahabat</span>
-                    <span>✓ Local Taste</span>
-                </div>
-
+                <a href="#menu" class="button">Lihat Menu</a>
             </div>
-
 
             <div class="hero-image">
-
-                <div class="image-decoration"></div>
-
-                <img src="images/lumpiagoreng-og.jpg"
-                    alt="Lumpia Azaz Amam">
-
-                <div class="floating-price">
-                    <small>Mulai dari</small>
-                    <strong>Rp12.000</strong>
-                </div>
-
+                <img src="images/lumpiagoreng-og.jpg" alt="Lumpia Basah">
             </div>
-
-        </section>
-
-
-        <!-- INFO -->
-        <section class="quick-info">
-
-            <div>
-                <span>🥬</span>
-                <div>
-                    <strong>Bahan Segar</strong>
-                    <small>Dipilih dengan baik</small>
-                </div>
-            </div>
-
-            <div>
-                <span>🔥</span>
-                <div>
-                    <strong>Fresh Made</strong>
-                    <small>Dibuat saat dipesan</small>
-                </div>
-            </div>
-
-            <div>
-                <span>💰</span>
-                <div>
-                    <strong>Harga Bersahabat</strong>
-                    <small>Cocok untuk semua</small>
-                </div>
-            </div>
-
         </section>
 
 
         <!-- KEUNGGULAN -->
         <section id="keunggulan" class="section">
-
             <div class="section-title">
-
                 <p>KENAPA KAMI?</p>
-
-                <h2>
-                    Sederhana, Tapi Bikin Balik Lagi.
-                </h2>
-
-                <span>
-                    Kami menjaga kualitas dari bahan sampai
-                    lumpia siap dinikmati.
-                </span>
-
+                <h2>Kenapa Pilih Lumpia Basah & Goreng Kami?</h2>
             </div>
-
 
             <div class="advantages">
 
                 <div class="advantage-card">
-
                     <div class="icon">🥬</div>
-
                     <h3>Bahan Segar</h3>
-
                     <p>
                         Menggunakan bahan yang segar
                         untuk menjaga kualitas makanan.
                     </p>
-
                 </div>
 
-
                 <div class="advantage-card">
-
                     <div class="icon">🥚</div>
-
                     <h3>Rasa Berkualitas</h3>
-
                     <p>
-                        Perpaduan isian dan bumbu khas
+                        Perpaduan bumbu dan isian yang
                         menghasilkan rasa gurih dan nikmat.
                     </p>
-
                 </div>
 
-
                 <div class="advantage-card">
-
                     <div class="icon">🔥</div>
-
                     <h3>Fresh Made</h3>
-
                     <p>
                         Lumpia dibuat dan dimasak dalam
                         kondisi fresh agar lebih nikmat.
                     </p>
-
                 </div>
 
             </div>
-
         </section>
 
 
         <!-- MENU -->
-        <section id="menu" class="menu-section">
-
-            <div class="section-title dark">
-
+        <section id="menu" class="section menu-section">
+            <div class="section-title">
                 <p>MENU KAMI</p>
-
-                <h2>
-                    Pilih Lumpia Favoritmu
-                </h2>
-
-                <span>
-                    Tiga pilihan, satu tujuan:
-                    bikin kenyang dan puas.
-                </span>
-
+                <h2>Pilihan Menu</h2>
             </div>
-
 
             <div class="menu-container">
 
-
-                <!-- MENU 1 -->
                 <div class="menu-card">
-
-                    <div class="menu-image">
-
-                        <img src="images/lumpiagoreng-og.jpg"
-                            alt="Lumpia Goreng OG">
-
-                        <span class="badge">
-                            FAVORIT
-                        </span>
-
-                    </div>
+                    <img src="images/lumpia.jpg" alt="Lumpia Basah Original">
 
                     <div class="menu-info">
-
                         <h3>Lumpia Goreng OG</h3>
 
                         <p>
-                            Lumpia goreng dengan isian khas,
+                            Lumpia Goreng dengan isian khas,
                             telur, dan bumbu gurih.
                         </p>
 
-                        <div class="menu-bottom">
-
-                            <div class="price">
-                                Rp12.000
-                            </div>
-
-                            <button
-                                class="add-button"
-                                onclick="addToCart('Lumpia Goreng OG', 12000, 'images/lumpiagoreng-og.jpg')">
-                                + Keranjang
-                            </button>
-
+                        <div class="price">
+                            Rp10.000
                         </div>
 
+                        <a href="#kontak" class="order-button">
+                            Pesan Sekarang
+                        </a>
                     </div>
-
                 </div>
 
 
-                <!-- MENU 2 -->
                 <div class="menu-card">
-
-                    <div class="menu-image">
-
-                        <img src="images/lumpia.jpg"
-                            alt="Lumpia Basah">
-
-                    </div>
+                    <img src="images/lumpia-pedas.jpg" alt="Lumpia Basah Pedas">
 
                     <div class="menu-info">
-
-                        <h3>Lumpia Basah</h3>
+                        <h3>Lumpia Basah Pedas Sehah Mantap</h3>
 
                         <p>
-                            Lumpia basah dengan isian segar,
-                            telur, dan bumbu khas.
+                            Varian dengan tambahan rasa
+                            pedas yang cocok untuk pecinta pedas.
                         </p>
 
-                        <div class="menu-bottom">
-
-                            <div class="price">
-                                Rp12.000
-                            </div>
-
-                            <button
-                                class="add-button"
-                                onclick="addToCart('Lumpia Basah', 12000, 'images/lumpia.jpg')">
-                                + Keranjang
-                            </button>
-
+                        <div class="price">
+                            Rp12.000
                         </div>
 
+                        <a href="#kontak" class="order-button">
+                            Pesan Sekarang
+                        </a>
                     </div>
-
                 </div>
 
 
-                <!-- MENU 3 -->
                 <div class="menu-card">
-
-                    <div class="menu-image">
-
-                        <img src="images/lumpia-spesial.jpg"
-                            alt="Lumpia Basah Special">
-
-                        <span class="badge special">
-                            SPECIAL
-                        </span>
-
-                    </div>
+                    <img src="images/lumpia-spesial.jpg" alt="Lumpia Basah Spesial">
 
                     <div class="menu-info">
-
-                        <h3>Lumpia Basah Special</h3>
+                        <h3>Lumpia Basah Spesial Mantap Surantap</h3>
 
                         <p>
                             Porsi spesial dengan isian lebih
-                            lengkap dan rasa lebih nikmat.
+                            lengkap dan rasa yang lebih nikmat.
                         </p>
 
-                        <div class="menu-bottom">
-
-                            <div class="price">
-                                Rp17.000
-                            </div>
-
-                            <button
-                                class="add-button"
-                                onclick="addToCart('Lumpia Basah Special', 17000, 'images/lumpia-spesial.jpg')">
-                                + Keranjang
-                            </button>
-
+                        <div class="price">
+                            Rp15.000
                         </div>
 
+                        <a href="#kontak" class="order-button">
+                            Pesan Sekarang
+                        </a>
                     </div>
-
                 </div>
 
             </div>
-
         </section>
 
 
@@ -354,25 +174,17 @@
         <section id="tentang" class="about section">
 
             <div class="about-image">
-
-                <img src="images/lumpia-logo.jpg"
-                    alt="Azaz Amam">
-
+                <img src="images/lumpia-logo.jpg" alt="Lumpia Basah">
             </div>
 
             <div class="about-text">
+                <p class="small-title">TENTANG USAHA</p>
 
-                <p class="small-title">
-                    TENTANG USAHA
-                </p>
-
-                <h2>
-                    Lumpia Sederhana,
-                    <span>Rasa Luar Biasa.</span>
-                </h2>
+                <h2>Lumpia Sederhana,<br>
+                    Rasa Luar Biasa.</h2>
 
                 <p>
-                    Usaha lumpia ini dibuat sebagai bentuk
+                    Usaha lumpia basah ini dibuat sebagai bentuk
                     penerapan kewirausahaan dengan menghadirkan
                     makanan yang sederhana, terjangkau, dan
                     memiliki peluang untuk dikembangkan.
@@ -380,53 +192,46 @@
 
                 <p>
                     Kami mengutamakan rasa, kualitas bahan,
-                    serta harga yang sesuai agar lumpia dapat
-                    dinikmati oleh berbagai kalangan.
+                    serta harga yang sesuai agar lumpia basah
+                    dapat dinikmati oleh berbagai kalangan.
                 </p>
-
             </div>
 
         </section>
 
 
         <!-- CARA PESAN -->
-        <section class="section how-section">
+        <section class="section">
 
             <div class="section-title">
-
                 <p>MUDAH DAN PRAKTIS</p>
-
-                <h2>
-                    Cara Memesan
-                </h2>
-
+                <h2>Cara Memesan</h2>
             </div>
-
 
             <div class="steps">
 
                 <div class="step">
                     <span>01</span>
                     <h3>Pilih Menu</h3>
-                    <p>Pilih lumpia yang kamu inginkan.</p>
+                    <p>Pilih varian lumpia yang kamu inginkan.</p>
                 </div>
 
                 <div class="step">
                     <span>02</span>
-                    <h3>Keranjang</h3>
-                    <p>Atur jumlah pesananmu.</p>
+                    <h3>Hubungi Kami</h3>
+                    <p>Hubungi kami melalui WhatsApp.</p>
                 </div>
 
                 <div class="step">
                     <span>03</span>
-                    <h3>Checkout</h3>
-                    <p>Isi data untuk pesanan.</p>
+                    <h3>Konfirmasi</h3>
+                    <p>Konfirmasi jumlah dan pesananmu.</p>
                 </div>
 
                 <div class="step">
                     <span>04</span>
-                    <h3>WhatsApp</h3>
-                    <p>Konfirmasi pesanan kepada kami.</p>
+                    <h3>Pesanan Diproses</h3>
+                    <p>Pesanan dibuat dan siap dinikmati.</p>
                 </div>
 
             </div>
@@ -434,26 +239,21 @@
         </section>
 
 
-        <!-- CONTACT -->
+        <!-- KONTAK -->
         <section id="kontak" class="contact">
 
-            <p class="small-title">
-                PUNYA PESANAN?
-            </p>
+            <p class="small-title">PUNYA PESANAN?</p>
 
-            <h2>
-                Lagi Lapar?
-            </h2>
+            <h2>Yuk, Nikmati Lumpia Basah & Goreng Kami!</h2>
 
             <p>
-                Saatnya pilih lumpia favoritmu.
+                Hubungi kami untuk melakukan pemesanan.
             </p>
 
-            <button
-                class="contact-button"
-                onclick="openCart()">
-                Pesan Sekarang →
-            </button>
+            <a href="https://wa.me/62895389751177?text=Halo%2C%20Bos%20Mau%20pesen%20Lumpia%20Basah/Goreng."
+                class="button">
+                Pesan via WhatsApp
+            </a>
 
         </section>
 
@@ -462,256 +262,16 @@
 
     <!-- FOOTER -->
     <footer>
+        <h2>Lumpia Basah & Goreng</h2>
 
-        <div class="footer-content">
-
-            <div>
-                <h2>
-                    <span>AZAZ</span> AMAM
-                </h2>
-
-                <p>
-                    Rasa Lokal, Bikin Nagih.
-                </p>
-            </div>
-
-            <div class="footer-links">
-
-                <a href="#home">Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#tentang">Tentang</a>
-                <a href="#kontak">Kontak</a>
-
-            </div>
-
-        </div>
-
-        <p class="copyright">
-            © 2026 Azaz Amam. All Rights Reserved.
+        <p>
+            Gurih • Pedas • Nikmat
         </p>
 
+        <p class="copyright">
+            © 2026 Lumpia Azaz Amam. All Rights Reserved.
+        </p>
     </footer>
-
-
-
-    <!-- ========================= -->
-    <!-- CART OVERLAY -->
-    <!-- ========================= -->
-
-    <div id="cartOverlay"
-        class="overlay"
-        onclick="closeCart()">
-    </div>
-
-
-    <!-- CART -->
-    <div id="cartDrawer" class="cart-drawer">
-
-        <div class="cart-header">
-
-            <h2>Keranjang 🛒</h2>
-
-            <button onclick="closeCart()">
-                ✕
-            </button>
-
-        </div>
-
-
-        <div id="cartItems"
-            class="cart-items">
-
-            <p class="empty-cart">
-                Keranjang masih kosong.
-            </p>
-
-        </div>
-
-
-        <div class="cart-footer">
-
-            <div class="cart-total">
-
-                <span>Total</span>
-
-                <strong id="cartTotal">
-                    Rp0
-                </strong>
-
-            </div>
-
-            <button
-                class="checkout-button"
-                onclick="openCheckout()">
-
-                Checkout →
-
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- ========================= -->
-    <!-- CHECKOUT MODAL -->
-    <!-- ========================= -->
-
-    <div id="checkoutModal"
-        class="modal">
-
-        <div class="modal-box">
-
-            <button
-                class="close-modal"
-                onclick="closeCheckout()">
-                ✕
-            </button>
-
-            <h2>Checkout</h2>
-
-            <p class="modal-subtitle">
-                Isi data pesananmu.
-            </p>
-
-
-            <label>
-                Nama
-            </label>
-
-            <input
-                type="text"
-                id="customerName"
-                placeholder="Nama kamu">
-
-
-            <label>
-                Nomor WhatsApp
-            </label>
-
-            <input
-                type="text"
-                id="customerPhone"
-                placeholder="08xxxxxxxxxx">
-
-
-            <label>
-                Alamat / Lokasi
-            </label>
-
-            <textarea
-                id="customerAddress"
-                placeholder="Contoh: depan sekolah..."></textarea>
-
-
-            <label>
-                Catatan
-            </label>
-
-            <textarea
-                id="customerNote"
-                placeholder="Contoh: jangan terlalu pedas"></textarea>
-
-
-            <div class="checkout-summary">
-
-                <span>Total Pesanan</span>
-
-                <strong id="checkoutTotal">
-                    Rp0
-                </strong>
-
-            </div>
-
-
-            <button
-                class="checkout-button"
-                onclick="sendOrder()">
-
-                Konfirmasi via WhatsApp
-
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- ========================= -->
-    <!-- LOGIN MODAL -->
-    <!-- ========================= -->
-
-    <div id="loginModal"
-        class="modal">
-
-        <div class="modal-box login-box">
-
-            <button
-                class="close-modal"
-                onclick="closeLogin()">
-                ✕
-            </button>
-
-            <div class="login-icon">
-                👤
-            </div>
-
-            <h2>
-                Selamat Datang
-            </h2>
-
-            <p class="modal-subtitle">
-                Login untuk menyimpan informasi akunmu.
-            </p>
-
-
-            <label>
-                Username
-            </label>
-
-            <input
-                type="text"
-                id="username"
-                placeholder="Masukkan username">
-
-
-            <label>
-                Password
-            </label>
-
-            <input
-                type="password"
-                id="password"
-                placeholder="Masukkan password">
-
-
-            <button
-                class="checkout-button"
-                onclick="loginUser()">
-
-                Login
-
-            </button>
-
-            <p class="login-note">
-                Demo website — belum menggunakan database.
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- TOAST -->
-    <div id="toast" class="toast">
-        ✓ Berhasil ditambahkan
-    </div>
-
-
-    <script src="script.js"></script>
 
 </body>
 
